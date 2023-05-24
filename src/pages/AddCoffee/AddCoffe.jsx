@@ -17,7 +17,7 @@ const AddCoffe = () => {
   const onSubmit = data => {
     // console.log(data);
 
-    fetch('http://localhost:5000/addcoffee', 
+    fetch('https://coffe-store-backend.vercel.app/addcoffee', 
     {
       method: "POST",
       headers: {"content-type" : "application/json"},

@@ -9,7 +9,7 @@ const Products = () => {
   const [coffees, setCoffees] = useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/addcoffee')
+    fetch('https://coffe-store-backend.vercel.app/addcoffee')
     .then(res => res.json())
     .then(data => setCoffees(data))
   },[])
@@ -31,7 +31,7 @@ const Products = () => {
           setCoffees(updatedCoffee)
 
           // delete from database
-          fetch(`http://localhost:5000/addcoffee/${id}`, {
+          fetch(`https://coffe-store-backend.vercel.app/addcoffee/${id}`, {
             method: 'DELETE'
           })
           .then(res => res.json())

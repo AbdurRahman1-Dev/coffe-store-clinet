@@ -32,7 +32,7 @@ const router = createBrowserRouter([
      {
         path: '/edit/:id',
         element: <EditCoffee></EditCoffee>,
-        loader: ({params}) => fetch(`http://localhost:5000/addcoffee/${params.id}`)
+        loader: ({params}) => fetch(`https://coffe-store-backend.vercel.app/addcoffee/${params.id}`)
       }
     ]
   },

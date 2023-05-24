@@ -25,7 +25,7 @@ const EditCoffee = () => {
 
   const onSubmit = data => {
 
-    fetch(`http://localhost:5000/addcoffee/${_id}`,{
+    fetch(`https://coffe-store-backend.vercel.app/addcoffee/${_id}`,{
       method: 'PUT',
       headers: {"content-type" : "application/json"},
       body: JSON.stringify(data)
